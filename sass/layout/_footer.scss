@@ -1,0 +1,40 @@
+.footer {
+    padding: 60px 0;
+    background-color: #2F303A;
+    &__address {
+        margin-right: 70px;
+    }
+    &__item-contact {
+        margin-bottom: 9px;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        color: rgba(255, 255, 255, 0.6);
+        
+        &--street {
+            color: $classic-white;
+        }
+    }
+}
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+.footer__appeal {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $classic-white;
+}
+.footer__link-social {
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+.footer__icon-social {
+    fill: $classic-white;
+}

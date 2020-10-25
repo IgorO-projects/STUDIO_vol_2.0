@@ -4,8 +4,8 @@
 @import "./utils/placeholders";
 
 // BASE 
-@import "./base/common";
 @import "./base/container";
+@import "./base/common";
 
 // COMPONENTS
 @import "./components/logo";
@@ -18,3 +18,5 @@
 @import "./layout/advantages";
 @import "./layout/services";
 @import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";

@@ -7,7 +7,14 @@ color: $classic-black;
 &__accent {
     color: $accent-color;
 }
+&-white {
+    color: $classic-white;
+}
 }
 .header__logo {
     margin-right: 93px;
+}
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
 }
