@@ -199,7 +199,7 @@ img {
 
 .header--stream::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   content: "";
   display: block;
   width: 100%;
@@ -434,9 +434,56 @@ img {
   color: #ffffff;
 }
 
+.footer__sign-label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__input {
+  margin-right: 12px;
+  padding: 15px;
+  width: 360px;
+  height: 50px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.footer__btn {
+  padding: 9px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.footer__btn::after {
+  content: "";
+  display: block;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/svg/icon-send.svg);
+}
+
+.footer__social {
+  margin-right: 93px;
+}
+
 .footer__container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer__appeal {
@@ -447,6 +494,10 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.footer__item-social:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer__link-social {

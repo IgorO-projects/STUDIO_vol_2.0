@@ -17,10 +17,55 @@
             color: $classic-white;
         }
     }
+    &__sign-label {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $classic-white;
+    }
+    &__input {
+        margin-right: 12px;
+        padding: 15px;
+        width: 360px;
+        height: 50px;
+        color: $classic-white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+    }
+    
+    &__btn {
+        padding: 9px 28px ;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $classic-white;
+        &::after {
+            content: "";
+            display: block;
+            margin-left: 10px;
+            width: 24px;
+            height: 24px;
+            background-image: url(../images/svg/icon-send.svg);
+        }
+    }
+}
+// ! DOESN'T WORK SPACE-BETWEEN? USED MARGIN VIA NOT(LAST-CHILD)
+// AFTER FIX ADD THIS PART TO THE .FOOTER WITH &
+.footer__social {
+    margin-right: 93px;
 }
 .footer__container {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 .footer__appeal {
     display: inline-block;
@@ -31,10 +76,13 @@
     text-transform: uppercase;
     color: $classic-white;
 }
+.footer__item-social:not(:last-child) {
+    margin-right: 10px;
+}
 .footer__link-social {
     background-color: rgba(255, 255, 255, 0.1);
-
 }
 .footer__icon-social {
     fill: $classic-white;
 }
+// ! ^ !!!!
